@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+.contanier{
+    margin: 100px;
+    border: 1px solid black;
+    height:432px;
+    width: 320px;
+    border-radius: 25px;
+    background-color:292727;
+}
+#display{
+    width: auto;
+    height: 76px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color:292727;
+    padding-right: 17.5px;
+    padding-top: 26px;
+    text-align: right;
+}
+.firstrow{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 31px
+}
+.secrow{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 31px;
+}
+.thirow{
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 31px;
+}
+.fourow{
+    display: flex;
+    cursor: pointer;
+}
+.topC{
+    display: flex;
+    cursor: pointer;
+    height: auto;
+}
+#boxop{
+    display: flex;
+    width: 51px;
+    height: 51px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    margin-right:18px;
+    margin-left: 13px;
+
+
+}
+.box{
+    width: 100px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#boxnum{
+    width: 51px;
+    height: 51px;
+    display: flex;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: center;
+
+}
+#boxo{
+    display: flex;
+    width: 51px;
+    height: 51px;
+    align-items: center;
+    justify-content: center;
+    margin-right:18px;
+    margin-left: 13px;
+    margin-bottom: 24px;
+
+}
+#boxn{
+    width: 51px;
+    height: 51px;
+    display: flex;
+    margin-left: 4px;
+    align-items: center;
+    justify-content: center;
+}
+#result{
+    width: 100px;
+    height: 51px;
+    background-color: #292727;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+#result:active{
+    animation: result 900ms ease-in-out ;
+}
+@keyframes result {
+    0%{border: 1.9px solid rgb(108, 108, 175);}
+    50%{border: 1.9px solid rgb(108, 108, 175);}
+    100%{border: 1.9px solid rgb(108, 108, 175);}
+}
+.box:active{
+    animation: box 900ms ease-in-out;
+}
+@keyframes box {
+    0%{border: 1.9px solid rgb(108, 108, 175);}
+    50%{border: 1.9px solid rgb(108, 108, 175);}
+    100%{border: 1.9px solid rgb(108, 108, 175);}
+}
+.random{
+    width: 40px;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 4px;
+    
+}
