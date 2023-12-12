@@ -113,17 +113,17 @@
     animation: result 900ms ease-in-out ;
 }
 @keyframes result {
-    0%{border: 1.9px solid rgb(108, 108, 175);}
-    50%{border: 1.9px solid rgb(108, 108, 175);}
-    100%{border: 1.9px solid rgb(108, 108, 175);}
+    0%{border: 2.5px solid rgb(108, 108, 175);}
+    50%{border: 2.5px solid rgb(108, 108, 175);}
+    100%{border: 2.5px solid rgb(108, 108, 175);}
 }
 .box:active{
     animation: box 900ms ease-in-out;
 }
 @keyframes box {
-    0%{border: 1.9px solid rgb(108, 108, 175);}
-    50%{border: 1.9px solid rgb(108, 108, 175);}
-    100%{border: 1.9px solid rgb(108, 108, 175);}
+    0%{border: 3px solid rgb(108, 108, 175);}
+    50%{border: 3px solid rgb(108, 108, 175);}
+    100%{border: 3px solid rgb(108, 108, 175);}
 }
 .random{
     width: 40px;
