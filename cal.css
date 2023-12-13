@@ -19,7 +19,7 @@
     height: 76px;
     color: rgb(0, 0, 0);
     border-radius: 25px;
-    background-color:292727;
+    background-color:transparent;
     padding-right: 17.5px;
     padding-top: 26px;
     text-align: right;
@@ -47,18 +47,17 @@
     display: flex;
     cursor: pointer;
     height: auto;
+    background-color: transparent;
 }
 #boxop{
     display: flex;
     width: 51px;
+    border-radius: 15px;
     height: 51px;
-    color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     margin-right:18px;
     margin-left: 13px;
-
-
 }
 .box{
     width: 100px;
@@ -87,7 +86,6 @@
     margin-right:18px;
     margin-left: 13px;
     margin-bottom: 24px;
-    
 
 }
 #boxn{
@@ -98,33 +96,44 @@
     align-items: center;
     justify-content: center;
 }
-#result{
+.result{
     width: 100px;
     height: 51px;
-    background-color: #292727;
     margin-left: 30px;
     margin-bottom: 3px;
     border-radius: 10px;
     display: flex;
-    color: rgb(0, 0, 0);
     align-items: center;
     justify-content: center;
+    fill: transparent;
 }
-#result:active{
-    animation: result 900ms ease-in-out ;
+.result:active{
+    animation: result 1900ms ease-in-out ;
 }
 @keyframes result {
-    0%{border: 2.5px solid rgb(108, 108, 175);}
-    50%{border: 2.5px solid rgb(108, 108, 175);}
-    100%{border: 2.5px solid rgb(108, 108, 175);}
+    0%{
+        fill:rgb(0, 247, 255);
+    }
+    50%{
+        fill:rgb(0, 0, 0);
+    }
+    100%{
+        fill:rgb(0, 247, 255);
+    }
 }
 .box:active{
-    animation: box 900ms ease-in-out;
+    animation: box 1900ms ease-in-out;
 }
 @keyframes box {
-    0%{border: 3px solid rgb(108, 108, 175);}
-    50%{border: 3px solid rgb(108, 108, 175);}
-    100%{border: 3px solid rgb(108, 108, 175);}
+    0%{
+        background-color:rgb(0, 247, 255);
+    }
+    50%{
+        background-color:rgb(0, 0, 0);
+    }
+    100%{
+        background-color:rgb(0, 247, 255);
+    }
 }
 .random{
     width: 40px;
@@ -132,5 +141,59 @@
     border-radius: 7px;
     margin-top: 10px;
     margin-left: 4px;
-    
+}
+.boxop{
+    border: 1.5px solid rgb(0, 247, 255);
+}
+.boxop:active{
+    animation: boxop 1900ms ease-in-out;
+}
+@keyframes boxop{
+    0%{
+        border: black;
+    }
+    50%{
+        border: black;
+    }
+    100%{
+        border: black;
+    }
+}
+.dele{
+    width: 100px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.dele:active{
+    animation: dele 1000ms ease-in-out;
+}
+@keyframes dele{
+    0%{
+        fill:rgb(0, 247, 255);
+    }
+    50%{
+        fill:rgb(0, 0, 0);
+    }
+    100%{
+        fill:rgb(0, 247, 255);
+    }
+}
+.random:active{
+    animation: random 1900ms ease-in-out;
+}
+@keyframes random{
+    0%{
+        background-color:rgb(0, 247, 255);
+    }
+    50%{
+        background-color:rgb(0, 0, 0);
+    }
+    100%{
+        background-color:rgb(0, 247, 255);
+    }
 }

@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="contanier" id="contanier">
+        <div id="res">
+            
+            <h1 id="display"></h1>
+            
+        </div>
+
+            <div class="topC">
+                <div class="dele" onclick="document.getElementById('display').innerHTML=' '"; >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="101" height="30" viewBox="0 0 101 30">
+                        <rect width="101" height="30" rx="10" />
+                        <path d="M36.8072 14.2929C36.4167 14.6834 36.4167 15.3166 36.8072 15.7071L43.1711 22.0711C43.5617 22.4616 44.1948 22.4616 44.5854 22.0711C44.9759 21.6805 44.9759 21.0474 44.5854 20.6569L38.9285 15L44.5854 9.34315C44.9759 8.95262 44.9759 8.31946 44.5854 7.92893C44.1948 7.53841 43.5617 7.53841 43.1711 7.92893L36.8072 14.2929ZM63.4857 14L37.5143 14V16L63.4857 16V14Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="firstrow">
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='1'"><h1>1</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='2'"><h1>2</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='3'"><h1>3</h1></div>
+                <div id="boxop"  class="boxop"  onclick="document.getElementById('display').innerHTML+='+'"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="black" >
+                    <path d="M0 8.17017L16.3057 8.17017" stroke="white" stroke-width="2"/>
+                    <path d="M8.15289 16.3403V-9.19104e-05" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                
+            </div>
+
+            <div class="secrow">
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='6'"><h1>6</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='5'"><h1>5</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='4'"><h1>4</h1></div>
+                <div id="boxop"  class="boxop"  onclick="document.getElementById('display').innerHTML+='-'"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="6" viewBox="0 0 17 2" >
+                    <path d="M0 1L16.3057 1" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="thirow">
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='7'"><h1>7</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='8'"><h1>8</h1></div>
+                <div id="boxnum" class="box"  onclick="document.getElementById('display').innerHTML+='9'"><h1>9</h1></div>
+                <div id="boxop"  class="boxop"  onclick="document.getElementById('display').innerHTML+='*'"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path d="M1 1L12.5299 12.5544" stroke="white" stroke-width="2"/>
+                    <path d="M1 12.5544L12.5299 1.00002" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="fourow">
+                <div   class="result" id="ress" onclick="document.getElementById('display').innerHTML=eval(document.getElementById('display').innerHTML);" ><svg xmlns="http://www.w3.org/2000/svg" width="102" height="55" viewBox="0 0 102 52" >
+                    <rect x="1.5" y="1.5" width="98.9108" height="48.0638" rx="7.5" stroke="transparent" stroke-width="3"/>
+                    <path d="M37.9668 22.2585H63.9441" stroke="white" stroke-width="2"/>
+                    <path d="M37.9668 31.4238L63.9441 31.4238" stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="random" id="random">
+                    <img class="dice" src="images/Dice.png" />
+                </div>
+                <div id="boxn" class="box" onclick="document.getElementById('display').innerHTML+='0'"><h1>0</h1></div>
+                <div id="boxop" class="boxop" onclick="document.getElementById('display').innerHTML+='/'"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 18 15">
+                    <path d="M0 7.30347L17.3248 7.149" stroke="white" stroke-width="2"/>
+                    <ellipse cx="8.66245" cy="1.53191" rx="1.52866" ry="1.53191" fill="white"/>
+                    <ellipse cx="8.66245" cy="12.766" rx="1.52866" ry="1.53191" fill="white"/>
+                    </svg>
+                </div>
+                
+                
+            </div>
+    <script src="cal.js"></script>
+</body>
+</html>
