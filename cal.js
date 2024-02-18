@@ -11,6 +11,10 @@ function randomcolor(){
 }
 btn.addEventListener("click",()=>{
     document.getElementById("contanier").style.backgroundColor=randomcolor();
-    element.querySelectorAll(".box").style.fill= randomcolor();
-
+    a=randomcolor();
+    const nodeList = document.querySelectorAll(".boxop");
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style.backgroundColor = a;
+        nodeList[i].style.border="1px solid black";
+    }
 });
